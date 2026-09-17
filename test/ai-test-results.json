@@ -1,0 +1,42 @@
+[
+  {
+    "id": "TC-001",
+    "status": "Pass",
+    "evidence": "Home page loaded and displayed Tour A, Tour B, and Tour C."
+  },
+  {
+    "id": "TC-002",
+    "status": "Pass",
+    "evidence": "Clicking a tour while logged out opened the sign-in modal."
+  },
+  {
+    "id": "TC-003",
+    "status": "Pass",
+    "evidence": "Sign-up modal accepted data and opened selected tour booking modal."
+  },
+  {
+    "id": "TC-005",
+    "status": "Pass",
+    "evidence": "Total updated to 3,900 for 2 pax with ETDF and lagoon add-ons."
+  },
+  {
+    "id": "TC-004",
+    "status": "Pass",
+    "evidence": "Booking form submitted and redirected to /checkout."
+  },
+  {
+    "id": "TC-006",
+    "status": "Pass",
+    "evidence": "Payment form submitted, showed processing state, and redirected to /dashboard."
+  },
+  {
+    "id": "TC-007",
+    "status": "Pass",
+    "evidence": "Dashboard displayed confirmed paid booking and invoice/itinerary details."
+  },
+  {
+    "id": "TC-008",
+    "status": "Manual / Blocked",
+    "evidence": "Automated PDF download check did not complete: page.waitForEvent: Timeout 30000ms exceeded while waiting for event \"download\"\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================. Console errors: PDF Generation Error: Error: Attempting to parse an unsupported color function \"lab\"\n    at A7 (http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:74610)\n    at t$ (http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:102200)\n    at new A (http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:98368)\n    at new t1 (http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:102779)\n    at r0 (http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:142174)\n    at r4 (http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:142210)\n    at http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:196707\n    at Object.next (http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:2095)\n    at s (http://localhost:3000/_next/static/chunks/107vq_b-3xprk.js:1:954) Human should test manually."
+  }
+]
