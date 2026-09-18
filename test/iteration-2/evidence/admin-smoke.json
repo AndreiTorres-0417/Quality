@@ -1,0 +1,34 @@
+[
+  {
+    "route": "/admin",
+    "status": 200,
+    "content": true,
+    "errors": []
+  },
+  {
+    "route": "/admin/quotation",
+    "status": 200,
+    "content": true,
+    "errors": [
+      "Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings."
+    ]
+  },
+  {
+    "route": "/admin/clients",
+    "status": 200,
+    "content": true,
+    "errors": []
+  },
+  {
+    "route": "/admin/products",
+    "status": 200,
+    "content": true,
+    "errors": []
+  },
+  {
+    "route": "/admin/invoices",
+    "status": 200,
+    "content": true,
+    "errors": []
+  }
+]

@@ -11,6 +11,13 @@
 # testing
 /coverage
 
+# local QA authoring and intermediate artifacts
+/.qa-build/
+/.chart-data-*/
+/outputs/iteration-2/iteration-2-qa-package.zip
+/test/iteration-2/evidence/results.partial.json
+/test/iteration-2/evidence/server.log
+
 # next.js
 /.next/
 /out/
