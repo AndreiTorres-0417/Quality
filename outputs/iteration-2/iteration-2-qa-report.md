@@ -31,13 +31,17 @@ The original deck counted 19 cases, but its 11 listed cases plus seven regressio
 
 ## Test basis and limits
 
-Requirements are inferred from the original deck and current implementation where completed requirements were not available. TC-017 expects a submitted quotation record, but the page offers a preview without a record-submission action. It fails the written case; BUG-009 remains a scope clarification rather than a confirmed agreed-requirement defect. Proposed severities require team triage. Development assignees are pending.
+Requirements are inferred from the original deck and current implementation where completed requirements were not available. TC-017 expects a submitted quotation record, but the page offers a preview without a record-submission action. It fails the written case; UC-004-SCOPE-001 remains a scope clarification rather than a confirmed agreed-requirement defect. Proposed severities require team triage. Development assignees are pending.
 
-Authentication and payment are simulated. No real payment, backend persistence, security, accessibility, performance or browser-matrix assurance is claimed. Supabase is an unused scaffold (BUG-005 observation); absence of tracked environment files does not prove deployed configuration is absent.
+Authentication and payment are simulated. No real payment, backend persistence, security, accessibility, performance or browser-matrix assurance is claimed. Supabase is an unused scaffold (OBS-001 observation); absence of tracked environment files does not prove deployed configuration is absent.
 
 Historical Iteration 1: the written record reports 7 passes and 1 PDF failure; raw JSON labeled that failure Manual / Blocked. Both recorded no download and the lab error. This report does not rewrite historical records or claim 8 was the entire original backlog.
 
 The original IDs TC-009 onward and UC-003 were used differently in earlier documents. IDs in this report follow the Iteration 2 deck: UC-001 booking, UC-002 payment/invoice, UC-003 data continuity, UC-004 admin. Interpret IDs together with iteration and title.
+
+Confirmed defect IDs now start with the related use case, with numbering restarting within each use case. For example, the invoice failure previously called BUG-001 is UC-002-BUG-001 here. SETUP-BUG-001 is outside the product use cases. UC-004-SCOPE-001 and OBS-001 are not among the seven confirmed defects. Historical evidence files and older decks retain their original labels.
+
+The official repository's `1. Diagrams and Artifacts` folder contains only a readme at both the tested baseline `fffd308` and the newer `2f0d932` commit. The midterm documents are templates and contain no completed use case diagram. This documentation gap limits confirmation of actors, feature boundaries and alternate flows. The QA team should request an approved diagram and functional requirements, then update the RTM. This is not counted as an application defect.
 
 ## Test data
 
@@ -68,7 +72,7 @@ Guest: QA Iteration Two Guest; contact: +639123456789; future date: 2026-09-27; 
 
 ## Findings
 
-### BUG-001: Invoice PDF export fails
+### UC-002-BUG-001: Invoice PDF export fails
 
 Proposed severity: Medium. Disposition: Open. Related cases: TC-008R; TC-009. Owner: development team, assignee pending.
 
@@ -82,7 +86,7 @@ Proposed severity: Medium. Disposition: Open. Related cases: TC-008R; TC-009. Ow
 
 **Recommended action:** Make capture styles compatible or generate from data; retest file and contents.
 
-### BUG-002: Checkout loses booking details and total
+### UC-003-BUG-001: Checkout loses booking details and total
 
 Proposed severity: High. Disposition: Open. Related cases: TC-010; TC-011. Owner: development team, assignee pending.
 
@@ -96,7 +100,7 @@ Proposed severity: High. Disposition: Open. Related cases: TC-010; TC-011. Owner
 
 **Recommended action:** Pass actual booking state into checkout.
 
-### BUG-003: Dashboard displays sample booking
+### UC-003-BUG-002: Dashboard displays sample booking
 
 Proposed severity: High. Disposition: Open. Related cases: TC-012. Owner: development team, assignee pending.
 
@@ -110,7 +114,7 @@ Proposed severity: High. Disposition: Open. Related cases: TC-012. Owner: develo
 
 **Recommended action:** Render the actual booking and consistent status.
 
-### BUG-004: Malformed card values produce simulated success
+### UC-002-BUG-002: Malformed card values produce simulated success
 
 Proposed severity: High. Disposition: Open. Related cases: TC-014. Owner: development team, assignee pending.
 
@@ -124,7 +128,7 @@ Proposed severity: High. Disposition: Open. Related cases: TC-014. Owner: develo
 
 **Recommended action:** Validate format and expiry; real gateway integration remains out of scope.
 
-### BUG-005: Unused Supabase integration
+### OBS-001: Unused Supabase integration
 
 Proposed severity: Low. Disposition: Observation. Related cases: Static review. Owner: development team, assignee pending.
 
@@ -138,7 +142,7 @@ Proposed severity: Low. Disposition: Observation. Related cases: Static review. 
 
 **Recommended action:** Confirm backend scope and validate configuration before integration.
 
-### BUG-006: Past tour date accepted
+### UC-001-BUG-001: Past tour date accepted
 
 Proposed severity: Medium. Disposition: Open. Related cases: TC-015. Owner: development team, assignee pending.
 
@@ -152,7 +156,7 @@ Proposed severity: Medium. Disposition: Open. Related cases: TC-015. Owner: deve
 
 **Recommended action:** Apply agreed date/lead-time rules.
 
-### BUG-007: Clean Windows install fails
+### SETUP-BUG-001: Clean Windows install fails
 
 Proposed severity: Medium. Disposition: Open. Related cases: TC-018. Owner: development team, assignee pending.
 
@@ -166,7 +170,7 @@ Proposed severity: Medium. Disposition: Open. Related cases: TC-018. Owner: deve
 
 **Recommended action:** Remove direct Linux dependency and regenerate/verify platform-safe lockfile.
 
-### BUG-008: Quotation hydration runtime error
+### UC-004-BUG-001: Quotation hydration runtime error
 
 Proposed severity: Medium. Disposition: Open. Related cases: TC-016. Owner: development team, assignee pending.
 
@@ -180,7 +184,7 @@ Proposed severity: Medium. Disposition: Open. Related cases: TC-016. Owner: deve
 
 **Recommended action:** Use a stable reference identifier; retest initial page load.
 
-### BUG-009: Quotation record submission is absent
+### UC-004-SCOPE-001: Quotation record submission is absent
 
 Proposed severity: Medium. Disposition: Scope clarification. Related cases: TC-017. Owner: development team, assignee pending.
 

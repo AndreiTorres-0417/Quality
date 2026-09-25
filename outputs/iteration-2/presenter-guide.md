@@ -34,7 +34,7 @@ The tested source is commit 90f5c44aa7eb1fe36d6820a36da27d9110740694. Custom col
 
 ### Slide 6
 
-The PDF failure is now reproduced, not merely suspected. Clicking Download PDF Invoice produced no download, and the console reported an unsupported color function named lab. html2canvas renders the invoice region into an image, and jsPDF packages it as a PDF. The image-rendering step failed. BUG-001 remains open. The next case, checking PDF contents, is blocked because no file exists. No one should claim the PDF was opened or visually inspected.
+The PDF failure is now reproduced, not merely suspected. Clicking Download PDF Invoice produced no download, and the console reported an unsupported color function named lab. html2canvas renders the invoice region into an image, and jsPDF packages it as a PDF. The image-rendering step failed. UC-002-BUG-001 remains open. The next case, checking PDF contents, is blocked because no file exists. No one should claim the PDF was opened or visually inspected.
 
 ### Slide 7
 
